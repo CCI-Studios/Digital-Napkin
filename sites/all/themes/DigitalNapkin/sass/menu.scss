@@ -1,0 +1,272 @@
+//menu and twitter buttons
+
+.btn-menu, .twitter {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+
+	a {
+		position: absolute;
+		margin-left: -20px;
+		top: 0;
+		height: 40px;
+		width: 40px;
+		z-index: 7;
+
+		.region-footer & {
+			height: 24px;
+			width: 24px;
+			margin-left: -12px;
+		}
+	}
+
+	&:after {
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+}
+
+.btn-menu {
+	@include diamond($green, 20px);
+	z-index: 7;
+	float: right;
+	margin-top: 10px;
+
+	.open-menu & {
+		@include diamond(#fff, 20px);
+		z-index: 7;
+	}
+}
+
+.icon-bar {
+	position: relative;
+	z-index: 2;
+	margin: 12px 0 0 -9px;
+	display: block;
+	width: 18px;
+	height: 3px;
+	background-color: #fff;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+
+	.open-menu & {
+		background-color: $green;
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+	}
+}
+
+.icon-bar + .icon-bar {
+  margin-top: 3px;
+}
+
+.twitter {
+
+	.region-navigation & {
+		left: auto;
+		padding: 0;
+		text-indent: -9999px;
+		@include diamond($green, 20px);
+		z-index: 7;
+		float: right;
+		margin: 10px 10px 0;
+
+		.open-menu & {
+			@include diamond(#fff, 20px);
+			z-index: 7;
+
+			a {
+				background: url(../img/icon-twitter-hover.png) center center no-repeat;
+			}
+		}
+
+		&:before {
+			// content: '';
+			// position: absolute;
+			// background: url(../img/icon-twitter.png) center center no-repeat;
+			// height: 40px !important;
+			// width: 40px !important;
+			// top: 0;
+			// left: -20px;
+			// z-index: 7;
+			// margin: 0;
+		}
+
+		a {
+			background: url(../img/icon-twitter.png) center center no-repeat;
+		}
+	}
+
+	.region-footer & {
+
+		padding: 0;
+		text-indent: -9999px;
+		@include diamond(white, 12px);
+		position: absolute;
+		z-index: 5;
+
+		&:before {
+			content: '';
+			position: absolute;
+			background: url(../img/icon-twitter-footer.png) center center no-repeat;
+			height: 12px;
+			width: 12px;
+			top: 5px;
+			left: -6px;
+			z-index: 2;
+			margin: 0;
+			background-size: 100%;
+		}
+	}
+}
+
+//main menu
+#block-system-main-menu {
+	width: 100%;
+	float: right;
+	clear: both;
+	position: relative;
+	background:$green;
+	
+	li.expanded
+	{
+		& > ul.menu
+		{
+			display: none;
+			position: absolute;
+			background:$green;
+			width:260px;
+
+			li
+			{
+				float: none;
+				max-width: 260px;
+				margin-right: 0px;
+			}
+		}
+
+		&:hover > ul.menu
+		{
+			display: block;
+		}
+
+	}
+
+	ul {
+		margin: 0;
+		overflow:hidden;
+		max-width: 1060px;
+		margin: 0 auto;
+		padding-left: 0px;
+
+		li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			float: left;
+			max-width: 140px;
+			border-top: 1px solid #4f9068;
+			margin-right: 15px;
+
+			&:first-child {
+				border-top: 0;
+			}
+
+			li {
+				padding-left: 38px;
+
+				&.first {
+					border-top: 1px solid #4f9068;
+				}
+			}
+		}
+
+		a,
+		span {
+			color: #fff;
+			font-size: 18px;
+			text-decoration: none;
+			padding: 15px 15px;
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			cursor: pointer;
+
+			&:hover {
+				background: url(../img/icon-menu-arrow-hover.png) center left no-repeat;
+			}
+		}
+
+		.twitter
+		{
+			top:10px;
+			padding-right: 0px;
+		}
+
+		a#twitter-link:hover
+		{	
+			background: url(../img/icon-twitter-hover.png) center center no-repeat;
+		}
+
+		ul {
+			padding: 0;
+		}
+	}
+}
+
+#block-menu-menu-footer {
+	float: left;
+
+	ul {
+		margin: 6px 0 0 0;
+		padding: 0;
+	}
+
+	ul, li {
+		list-style: none;
+	}
+
+	li {
+		float: left;
+		line-height: 12px;
+		padding: 0 10px;
+		margin: 0;
+		border-left: 1px solid #fff;
+	}
+
+	a {
+		color: #fff;
+	}
+}
+
+#block-block-2,
+.btn-menu a
+{
+	display:none;
+}
+//sitemap
+
+#site-map {
+	font-size: 1.3em;
+	ul {
+		padding: 0;
+		li {
+			color: $green;
+			list-style: none;
+			margin: 5px 0;
+		}
+
+		ul {
+			li {
+				margin: 0;
+			}
+		}
+	}
+}

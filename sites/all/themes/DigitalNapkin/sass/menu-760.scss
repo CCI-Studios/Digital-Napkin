@@ -1,0 +1,82 @@
+.btn-menu a, .twitter a {
+	height: 60px;
+	width: 60px;
+	margin-left: -30px;
+}
+
+.btn-menu {
+	@include diamond($green, 30px);
+	z-index: 7;
+	display: none;
+
+	.open-menu & {
+		@include diamond(#fff, 30px);
+		z-index: 7;
+	}
+}
+
+.icon-bar {
+	margin: 22px 0 0 -13px;
+	width: 27px;
+	height: 4px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+
+	.open-menu & {
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+	}
+}
+
+.twitter {
+
+	.region-navigation & {
+		left: auto;
+		padding: 0;
+		text-indent: -9999px;
+		@include diamond($green, 30px);
+		z-index: 7;
+
+		.open-menu & {
+			@include diamond(#fff, 30px);
+			z-index: 7;
+
+			a {
+				background: url(../img/icon-twitter-large-hover.png) center center no-repeat;	
+			}
+		}
+
+		&:before {
+			// content: '';
+			// position: absolute;
+			// background: url(../img/icon-twitter-large.png) center bottom no-repeat;
+			// height: 40px;
+			// width: 40px;
+			// top: 2px;
+			// left: -20px;
+			// z-index: 7;
+			// margin: 0;
+		}
+
+		a {
+			background: url(../img/icon-twitter-large.png) center center no-repeat;
+			z-index: 7;
+			width: 60px;
+			height: 60px;
+		}
+	}
+}
+
+#block-system-main-menu {
+	width: 100%;
+}
+
+
+#block-menu-menu-footer {
+
+	a {
+		font-size: 14px;
+	}
+}

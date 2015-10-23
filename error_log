@@ -1,0 +1,2 @@
+[24-Aug-2015 14:39:44 America/New_York] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/lib/php/extensions/no-debug-non-zts-20121212/memcache.so' - /usr/local/lib/php/extensions/no-debug-non-zts-20121212/memcache.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[24-Aug-2015 14:40:42 America/Toronto] PHP Fatal error:  Class 'views_handler_field' not found in /home/staging/subdomains/digitalnapkin/public_html/sites/all/modules/twitter/twitter_views_field_handlers.inc on line 10

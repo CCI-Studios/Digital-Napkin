@@ -1,0 +1,290 @@
+#block-views-slideshow-block {
+	.views-field-field-slideshow-text {
+		font-size: 44px;
+	}
+
+	.views-field-field-image {
+
+		&:before {
+			content: "";
+			background: url(../img/bg-slideshow.png) bottom right no-repeat;
+			position: absolute;
+			z-index: 3;
+			width: 505px;
+			height: 429px;
+			bottom: 0;
+			right: 0;
+			background-size: 100%;
+		}
+	}
+
+	.indicators {
+		margin-top: 30px;
+	}
+}
+//site tweets
+#block-views-site-tweets-block {
+	text-align: center;
+
+	.views-row {
+		
+		&.views-row-1,
+		&.views-row-2 {
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			margin: 1em 30px;
+		}
+	}
+}
+
+//news
+#block-views-news-block {
+
+	.views-row {
+		margin: 1em 30px;
+	}
+
+	.news-block-header {
+		@include diamond(black, 100px);
+		margin: 0 auto;
+
+		> div {
+			display: table;
+			width: 200px;
+			height: 200px;
+			margin-left: -100px;
+		}
+
+		h2 {
+			font-size: 1.8125em;
+			text-transform: lowercase;
+			color: white;
+			display: table-cell;
+			vertical-align: middle;
+			z-index: 2;
+			position: relative;
+			text-align: center;
+		}
+	}
+
+	.block-view-grid {
+		float: left;
+		width: 50%;
+	}
+
+	.view-content {
+		margin-top: -130px;
+	}
+
+	.view-news {
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		position: relative;
+	}
+
+	.views-row-3 {
+		display: block;
+	}
+
+	.view-footer {
+		clear: both;
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		margin-top: -100px;
+		width: 100%;
+	}
+}
+
+.view-news {
+
+	.views-field-field-image {
+		img {
+			display: block;
+		}
+	}
+
+	.views-field-title {
+		clear: none;	
+	}	
+}
+
+//view
+.page-archived-news,
+.page-news,
+.node-type-news {
+
+	.region-content {
+		.views-field-field-image,
+		.field-name-field-image  {
+
+			~ .views-field-title, ~ .views-field-body,
+			~ .field-name-field-title, ~ .field-name-field-title {
+				padding-left: 340px;
+			}
+
+			~ .views-field-nothing .news-more,
+			~ .views-field-nothing-1 .news-more {
+				 margin-left: 330px;
+			}
+		}
+
+		.views-field-title,
+		.field-name-field-title, {
+			padding-left: 170px;
+			clear: none;
+		}
+
+		.views-field-field-date,
+		.field-name-field-date {
+			display: block;
+		}
+
+		.views-field-body,
+		.field-name-body {
+			// padding-left: 170px;
+		}
+
+		.news-more {
+			margin-left: 160px;
+		}
+
+		.views-row {
+			padding: 50px 0;
+		}
+	}
+}
+
+
+.page-archived-news,
+.page-news {
+	.region-content {
+		.views-field-body {
+			padding-left: 170px;
+		}
+	}
+}
+
+.node-type-news {
+	.region-content {
+		.field-name-body {
+			margin-top: 1em;
+			clear: none;
+		}
+	}
+}
+
+//entrepreneurs-in-action
+.page-entrepreneurs-in-action {
+
+	.region-content {
+		.views-field-title,
+		.field-name-field-title,
+		.field-name-field-business-name,
+		.views-field-field-entrepreneur-name,
+		.field-name-field-entrepreneur-name,
+		.views-field-body,
+		.field-name-body,
+		.views-field-field-link,
+		.field-name-field-link {
+			padding-left: 370px;
+		}
+	}
+}
+
+.page-entrepreneurs-in-action,
+.node-type-entrepreneurs-in-action {
+
+	.region-content {
+		.views-field-field-youtube-video-id {
+			.field-content {
+				float: left;
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+			}
+
+			.play.youtube {
+				position: absolute;
+				width: 330px;
+				height: 186px;
+				cursor: pointer;
+			}
+
+			iframe {
+				position: absolute;
+				width: 100%;
+				max-width: 330px;
+			}
+		}
+
+		.views-field-field-image,
+		.field-name-field-image,
+		.views-field-field-youtube-video-id {
+			display: block;
+
+			img {
+				max-width: 330px;
+				float: left;
+			}
+		}
+
+		.views-field-title,
+		.field-name-field-title, {
+			clear: none;
+		}
+
+		.news-more {
+			margin-left: 360px;
+		}
+
+		.views-row {
+			padding: 20px 0;
+		}
+
+		.views-row-even {
+
+			.views-field-field-youtube-video-id {
+
+				.field-content {
+					float: right;
+				}
+			}
+			
+			.views-field-field-image {
+
+				img {float: right;}
+			}
+
+			.views-field-title,
+			.field-name-field-title,
+			.views-field-field-entrepreneur-name,
+			.views-field-body,
+			.field-name-body,
+			.views-field-field-link {
+				padding-right: 370px;
+				padding-left: 10px;
+			}
+
+			.news-more {
+				margin-right: 360px;
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+//resources
+.view-resources {
+	.field-content {
+		overflow: auto;
+		ul {
+			padding: 0 40px 0 0;
+			float: left;
+			width: 50%;
+			margin: 0;
+		}
+	}
+}

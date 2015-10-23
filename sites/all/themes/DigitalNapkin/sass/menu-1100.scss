@@ -1,0 +1,113 @@
+@media only screen and (max-width:1100px) {
+
+	#block-system-main-menu {
+
+	width:365px;
+	float: right;
+    clear: both;
+    position: absolute;
+    right: -100%;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: 6;
+	ul
+	{
+		padding:70px 0 0 15px;
+
+		li
+		{
+			float: none;
+			max-width: 100%;
+		}
+
+		li.expanded ul.menu
+		{
+			display: block;
+			position: relative;
+			width: 100%;
+
+			li
+			{
+				max-width: 100%;
+			}
+		}
+	}
+
+	#twitter-link,
+	.twitter
+	{
+		display: none;
+	}
+}
+
+.open-menu #block-system-main-menu
+{
+	right:0;
+}
+
+#block-block-2,
+.btn-menu a,
+.btn-menu
+{
+	display:block;
+}
+
+#header
+{
+	padding-top: 0px;
+}
+
+}
+
+@media only screen and (min-width:1100px) {
+
+	#block-block-2,
+	.btn-menu a,
+	.btn-menu
+	{
+		display:none;
+	}
+
+	#block-system-main-menu
+	{
+		ul li
+		{
+			border-top: 0px;
+		}
+	}
+
+	.twitter {
+
+	.region-navigation & {
+		left: auto;
+		padding: 0;
+		text-indent: -9999px;
+		@include diamond(#fff, 20px);
+		z-index: 7;
+
+		.open-menu & {
+			@include diamond(#fff, 20px);
+			z-index: 7;
+
+			a {
+				background: url(../img/icon-twitter-hover.png) center center no-repeat;	
+			}
+		}
+
+		a {
+			background: url(../img/icon-twitter-hover.png) center center no-repeat;
+			z-index: 7;
+			width: 60px;
+			height: 40px;
+
+			&:hover
+			{
+				background: url(../img/icon-twitter-hover.png) center center no-repeat;
+			}
+		}
+	}
+}
+}

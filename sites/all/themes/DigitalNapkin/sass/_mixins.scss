@@ -1,0 +1,46 @@
+@mixin sr-only {
+    position: absolute;
+    clip: rect(1px,1px,1px,1px);
+    overflow: hidden;
+    height: 1px;
+}
+
+@mixin diamond($color, $size) {
+	width: 0;
+	height: 0;
+	border: $size solid transparent;
+	border-bottom-color: $color;
+	position: relative;
+	top: -$size;
+	display: block;
+	z-index: 5;
+
+	&:after {
+		content: "";
+		position: absolute;
+		left: -$size;
+		top: $size;
+		width: 0;
+		height: 0;
+		border: $size solid transparent;
+		border-top-color: $color;
+	}
+	
+	&:before {
+		content: "";
+		background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+		background-size: 100%;
+		position: absolute;
+		height: ($size * 2) * 1.0201342282;
+		width: ($size * 2) * 1.0201342282;
+		margin-left: -($size * 1.0201342282) + 1;
+		margin-top: 0;
+	}
+}
+
+@mixin container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+}

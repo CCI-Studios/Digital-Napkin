@@ -1,0 +1,201 @@
+#block-views-news-block {
+
+	.views-row {
+		display: block;
+		margin: 1em 0;
+	}
+
+	.news-block-header {
+		@include diamond(black, 149px);
+		top: -149px;
+		margin: 0 auto;
+
+		> div {
+			display: table;
+			width: 298px;
+			height: 298px;
+			margin-left: -149px;
+		}
+
+		h2 {
+			font-size: 2.8125em;
+			text-transform: lowercase;
+			color: white;
+			display: table-cell;
+			vertical-align: middle;
+			z-index: 2;
+			position: relative;
+			text-align: center;
+		}
+	}
+
+	.view-content {
+		margin-top: -314px;
+	}
+
+	.block-view-grid {
+		float: left;
+		width: auto;
+	}
+
+	.views-row-2 {
+		margin-left: 344px;
+	}
+
+	.views-row-3,
+	.views-row-4 {
+		margin-top: -150px;
+	}
+
+	.views-row-3 {
+		margin-left: 160px;
+	}
+
+	.views-row-4 {
+		margin-left: 23px;
+	}
+
+	.view-footer {
+		position: absolute;
+		bottom: 52px;
+		right: 38px;
+		width: auto;
+	}
+}
+
+//entrepreneurs-in-action
+.page-entrepreneurs-in-action {
+	.region-content {
+		.views-field-title,
+		.field-name-field-title,
+		.field-name-field-business-name,
+		.views-field-field-entrepreneur-name,
+		.field-name-field-entrepreneur-name,
+		.views-field-body,
+		.field-name-body,
+		.views-field-field-link,
+		.field-name-field-link {
+			padding-left: 500px;
+		}
+	}
+}
+
+.page-entrepreneurs-in-action,
+.node-type-entrepreneurs-in-action {
+
+	.region-content {
+	.views-field-field-youtube-video-id {
+		.play.youtube {
+				position: absolute;
+				width: 460px;
+				height: 260px;
+				cursor: pointer;
+			}
+
+			iframe {
+				position: absolute;
+				width: 100%;
+				max-width: 460px;
+			}
+		}
+
+		.views-field-field-image,
+		.field-name-field-image,
+		.views-field-field-youtube-video-id {
+			display: block;
+
+			img {
+				max-width: 460px;
+			}
+		}
+
+		.views-field-title,
+		.field-name-field-title, {
+			clear: none;
+		}
+
+		.news-more {
+			margin-left: 490px;
+		}
+
+		.views-row {
+			padding: 50px 0;
+		}
+
+		.views-row-even {
+		.views-field-field-image {
+			img {
+				float: right;
+				}
+			}
+
+			.views-field-title,
+			.field-name-field-title,
+			.views-field-field-entrepreneur-name,
+			.views-field-body,
+			.field-name-body,
+			.views-field-field-link {
+				padding-right: 500px;
+				padding-left: 10px;
+			}
+
+			.news-more {
+				margin-right: 480px;
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+//news
+.node-type-news {
+
+	.region-content {
+
+		.field-name-field-image ~ .field-name-body {
+				padding-left: 340px;
+		}
+
+		.views-field-body,
+		.field-name-body {
+			padding-left: 170px;
+		}
+	}
+}
+
+//logos
+#block-views-logo-block-block {
+	text-align: center;
+
+	.content {
+		@include container;
+		margin: 0 auto;
+		width: auto;
+		max-width: initial;
+		overflow: none;
+	}
+
+	.view-content {
+		margin: 0 auto;
+	}
+	img {
+		
+	}
+}
+
+//site tweets
+#block-views-site-tweets-block {
+
+	.views-row {
+		@include diamond(#fff, 149px);
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+
+		&,
+		&.views-row-1,
+		&.views-row-2 {
+			margin: 0 6px;
+		}
+	}
+}

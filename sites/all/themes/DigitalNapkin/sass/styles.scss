@@ -1,0 +1,127 @@
+.clear {
+	clear: both;
+}
+
+.sr-only {
+	@include sr-only;
+}
+
+.text-helv {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+//lettering
+
+#block-views-content-block-block {
+
+	.views-row-1 {
+		.word5 {
+			color: black;
+		}
+	}
+
+	.views-row-2 {
+		.word2, .word3 {
+			color: black;
+		}
+	}
+	.views-field-field-link {
+		.word3 {
+			color: black;
+		}
+	}
+}
+
+#block-views-site-tweets-block {
+	.word2 {
+		color: black;
+	}
+}
+
+#block-views-news-block {
+	.word2 {
+		color: $green;
+	}
+}
+
+.page-node-15 {
+	.word2 {
+		color: black;
+	}
+}
+
+.page-entrepreneurs-in-action {
+	.word3 {
+		color: black;
+	}
+}
+
+.page-node-23,
+.page-node-26,
+.page-node-107 {
+	.word2 {
+		color: black;
+	}
+}
+.page-news .view-footer
+{
+	@include container;
+	font-size:24px;
+	padding:30px 10px;
+	text-align:center;
+}
+
+.page-node-107 {
+
+		img
+		{
+			height:auto!important;
+		}
+	}
+
+.page-node-33 {
+	.word2, .word3 {
+		color: black;
+	}
+}
+
+.page-news,
+.page-archived-news {
+	.word2 {
+		color: black;
+	}
+}
+
+.page-young-entrepreneurs {
+	.word2 {
+		color: black;
+	}
+}
+
+.page-sitemap {
+	.word2 {
+		color: black;
+	}
+}
+
+.backbg
+{
+	height:800px;
+	background-size:cover;
+}
+
+.page-news 
+{	
+	#content
+	{
+		background-color:white;
+	}
+
+	.view-footer
+	{
+		clear: left;
+		padding: 0px;
+		padding-bottom: 10px;
+	}
+}
+

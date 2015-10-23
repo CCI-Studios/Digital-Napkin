@@ -1,0 +1,2480 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+@font-face {
+  font-family: 'New Republic';
+  src: url("../fonts/sf_new_republic-webfont.eot");
+  src: url("../fonts/sf_new_republic-webfont?iefix") format("eot"), url("../fonts/sf_new_republic-webfont.woff") format("woff"), url("../fonts/sf_new_republic-webfont.ttf") format("truetype"), url("../fonts/sf_new_republic-webfont.svg#webfont") format("svg"); }
+body {
+  font-family: 'New Republic', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  background: #000; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5 {
+  margin: 1em 0 .79em;
+  font-weight: 100; }
+
+h1 {
+  font-size: 3em; }
+  h1.title {
+    text-transform: lowercase;
+    font-weight: 100;
+    text-align: center;
+    color: #146b36;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+    margin: 0; }
+  .node-type-page h1.title, .node-type-entrepreneurs-in-action h1.title, .page-sitemap h1.title, .page-user h1.title {
+    padding: .67em 0 .5em; }
+
+h2 {
+  color: #146b36; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: 100%; }
+
+.region-content p:first-child {
+  margin-top: 0; }
+
+a {
+  color: #146b36;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+body, html {
+  height: 100%; }
+
+.profile {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-top: 1em; }
+
+#page-wrapper {
+  overflow: hidden;
+  position: relative;
+  background: #fff; }
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+#header {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+  padding-bottom: 45px; }
+
+.page-news #page-title, .node-type-news #page-title, .page-entrepreneurs-in-action #page-title.page-title-entrepreneurs, .page-young-entrepreneurs #page-title, .page-services-for-entrepreneurs-resources #page-title {
+  background: #f2f2f2 url(../img/bg-page-title.png) top right no-repeat; }
+  .page-news #page-title > div, .node-type-news #page-title > div, .page-entrepreneurs-in-action #page-title.page-title-entrepreneurs > div, .page-young-entrepreneurs #page-title > div, .page-services-for-entrepreneurs-resources #page-title > div {
+    background: url(../img/bg-page-title-shadow-top.png) top center repeat-x;
+    display: table;
+    width: 100%; }
+    .page-news #page-title > div > div, .node-type-news #page-title > div > div, .page-entrepreneurs-in-action #page-title.page-title-entrepreneurs > div > div, .page-young-entrepreneurs #page-title > div > div, .page-services-for-entrepreneurs-resources #page-title > div > div {
+      background: url(../img/bg-page-title-shadow-bottom.png) bottom center repeat-x;
+      height: 155px;
+      display: table-cell;
+      vertical-align: middle; }
+.page-entrepreneurs-in-action #page-title {
+  display: none; }
+.page-entrepreneurs-in-action #page-title.page-title-entrepreneurs {
+  display: block; }
+  .page-entrepreneurs-in-action #page-title.page-title-entrepreneurs > div > div {
+    height: 225px; }
+.front #page-title {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px; }
+
+#content {
+  background: #f2f2f2 url(../img/bg-main-content.png) top right no-repeat; }
+  .node-type-page #content > div, .node-type-entrepreneurs-in-action #content > div, .page-sitemap #content > div, .page-user #content > div {
+    background: url(../img/bg-page-title-shadow-top.png) top center repeat-x; }
+  .node-type-page #content > div > div, .node-type-entrepreneurs-in-action #content > div > div, .page-sitemap #content > div > div, .page-user #content > div > div {
+    background: url(../img/bg-page-title-shadow-bottom.png) bottom center repeat-x; }
+  .node-type-news #content {
+    background: #fff url(../img/bg-news-odd.png) bottom left no-repeat; }
+  #content .region-content {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+    padding: 1em 10px 3em; }
+    .front #content .region-content {
+      padding: 0; }
+    .page-news #content .region-content, .page-entrepreneurs-in-action #content .region-content, .page-young-entrepreneurs #content .region-content, .page-node-23 #content .region-content, .page-services-for-entrepreneurs-resources #content .region-content {
+      max-width: 100%;
+      padding: 0; }
+  .page-node-23 #content .block-system {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+    padding-bottom: 40px; }
+
+.item-list .pager {
+  margin: 0;
+  padding: 2em 0;
+  position: relative;
+  left: 50%;
+  display: block;
+  float: left; }
+  .item-list .pager li {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: block;
+    float: left;
+    right: 50%; }
+.pager li.pager-item,
+.pager li.pager-current {
+  width: 0;
+  height: 0;
+  border: 14px solid transparent;
+  border-bottom-color: #146b36;
+  position: relative;
+  top: -14px;
+  display: block;
+  z-index: 5;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 0;
+  color: #fff;
+  line-height: 2em; }
+  .pager li.pager-item:after,
+  .pager li.pager-current:after {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: 14px;
+    width: 0;
+    height: 0;
+    border: 14px solid transparent;
+    border-top-color: #146b36; }
+  .pager li.pager-item:before,
+  .pager li.pager-current:before {
+    content: "";
+    background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+    background-size: 100%;
+    position: absolute;
+    height: 28.56376px;
+    width: 28.56376px;
+    margin-left: -13.28188px;
+    margin-top: 0; }
+  .pager li.pager-item span,
+  .pager li.pager-current span {
+    height: 28px;
+    width: 28px;
+    margin-left: -14px;
+    display: block;
+    position: relative;
+    z-index: 2; }
+  .pager li.pager-item a,
+  .pager li.pager-current a {
+    color: #fff; }
+.pager .pager-previous span,
+.pager .pager-next span {
+  width: 18px;
+  height: 29px; }
+.pager .pager-previous a,
+.pager .pager-next a {
+  display: block;
+  text-indent: -9999px;
+  width: 18px;
+  height: 29px; }
+.pager .pager-previous a {
+  background: url(../img/icon-pager-prev.jpg) center center no-repeat;
+  margin-right: 20px; }
+.pager .pager-next a {
+  background: url(../img/icon-pager-next.jpg) center center no-repeat;
+  margin-left: 20px; }
+.pager li.pager-ellipsis,
+.pager .pager-first.first,
+.pager .pager-last.last {
+  display: none; }
+
+#footer {
+  background: #000;
+  color: #7f7f7f;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 12px;
+  min-height: 65px; }
+  #footer a {
+    color: #7f7f7f; }
+    #footer a:hover {
+      text-decoration: underline; }
+
+.region-footer {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+#copyright, #site-by-cci {
+  margin: 2em 0;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 0 10px; }
+
+#site-by-cci {
+  border-left: 1px solid #7f7f7f; }
+
+#logo img {
+  width: 318px; }
+
+#block-views-slideshow-block {
+  position: relative; }
+  #block-views-slideshow-block:before {
+    content: "";
+    background: url(../img/bg-page-title-shadow-top.png) top center repeat-x;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 5px; }
+  #block-views-slideshow-block:after {
+    content: "";
+    background: url(../img/bg-page-title-shadow-bottom.png) bottom center repeat-x;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 5px;
+    bottom: 0; }
+  #block-views-slideshow-block .view-content {
+    overflow: hidden; }
+  #block-views-slideshow-block .views-row {
+    display: none;
+    position: absolute;
+    width: 100%; }
+    #block-views-slideshow-block .views-row.active {
+      z-index: 2; }
+  #block-views-slideshow-block .views-field-field-image {
+    position: absolute; }
+    #block-views-slideshow-block .views-field-field-image img {
+      max-height: 802px;
+      display: block;
+      width: 100%;
+      height: auto; }
+  #block-views-slideshow-block .views-field-field-slideshow-text {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: absolute;
+    bottom: .3em;
+    right: .3em;
+    z-index: 3;
+    text-align: right;
+    font-size: 22px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25); }
+    #block-views-slideshow-block .views-field-field-slideshow-text p {
+      margin: 0; }
+  #block-views-slideshow-block .indicators {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0; }
+    #block-views-slideshow-block .indicators li {
+      width: 0;
+      height: 0;
+      border: 12px solid transparent;
+      border-bottom-color: white;
+      position: relative;
+      top: -12px;
+      display: block;
+      z-index: 5;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1; }
+      #block-views-slideshow-block .indicators li:after {
+        content: "";
+        position: absolute;
+        left: -12px;
+        top: 12px;
+        width: 0;
+        height: 0;
+        border: 12px solid transparent;
+        border-top-color: white; }
+      #block-views-slideshow-block .indicators li:before {
+        content: "";
+        background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+        background-size: 100%;
+        position: absolute;
+        height: 24.48322px;
+        width: 24.48322px;
+        margin-left: -11.24161px;
+        margin-top: 0; }
+      #block-views-slideshow-block .indicators li a {
+        height: 24px;
+        width: 24px;
+        margin-left: -12px;
+        display: block;
+        position: relative;
+        z-index: 2; }
+      #block-views-slideshow-block .indicators li .btn-pause {
+        background: url(../img/pause.png) center center no-repeat; }
+      #block-views-slideshow-block .indicators li:hover, #block-views-slideshow-block .indicators li.active {
+        width: 0;
+        height: 0;
+        border: 12px solid transparent;
+        border-bottom-color: #146b36;
+        position: relative;
+        top: -12px;
+        display: block;
+        z-index: 5;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1; }
+        #block-views-slideshow-block .indicators li:hover:after, #block-views-slideshow-block .indicators li.active:after {
+          content: "";
+          position: absolute;
+          left: -12px;
+          top: 12px;
+          width: 0;
+          height: 0;
+          border: 12px solid transparent;
+          border-top-color: #146b36; }
+        #block-views-slideshow-block .indicators li:hover:before, #block-views-slideshow-block .indicators li.active:before {
+          content: "";
+          background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+          background-size: 100%;
+          position: absolute;
+          height: 24.48322px;
+          width: 24.48322px;
+          margin-left: -11.24161px;
+          margin-top: 0; }
+        #block-views-slideshow-block .indicators li:hover a, #block-views-slideshow-block .indicators li.active a {
+          height: 24px;
+          width: 24px;
+          margin-left: -12px;
+          display: block;
+          position: relative;
+          z-index: 2; }
+        #block-views-slideshow-block .indicators li:hover .btn-pause, #block-views-slideshow-block .indicators li.active .btn-pause {
+          background: url(../img/pause-hover.png) center center no-repeat; }
+
+.view-content-block .views-row {
+  padding: 40px 10px;
+  text-align: center;
+  background-repeat: no-repeat; }
+  .view-content-block .views-row .views-field-title h2 {
+    margin: 0 0 .5555em 0;
+    text-transform: lowercase;
+    font-size: 2.8125em;
+    font-weight: lighter;
+    letter-spacing: -10;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25); }
+  .view-content-block .views-row .views-field-body {
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25); }
+  .view-content-block .views-row.views-row-odd {
+    background-color: #146b36;
+    background-color: rgba(41, 153, 84, 1.0);
+    background-image: url(../img/bg-content-block-odd.png);
+    background-position: top left;
+    color: #ffffff;
+    box-shadow: inset 0px 0px 180px rgba(0, 0, 0, 0.5); }
+    .view-content-block .views-row.views-row-odd h2 {
+      color: #fff; }
+    .view-content-block .views-row.views-row-odd .views-field-field-link {
+      width: 0;
+      height: 0;
+      border: 71px solid transparent;
+      border-bottom-color: #fff;
+      position: relative;
+      top: -71px;
+      display: block;
+      z-index: 5; }
+      .view-content-block .views-row.views-row-odd .views-field-field-link:after {
+        content: "";
+        position: absolute;
+        left: -71px;
+        top: 71px;
+        width: 0;
+        height: 0;
+        border: 71px solid transparent;
+        border-top-color: #fff; }
+      .view-content-block .views-row.views-row-odd .views-field-field-link:before {
+        content: "";
+        background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+        background-size: 100%;
+        position: absolute;
+        height: 144.85906px;
+        width: 144.85906px;
+        margin-left: -71.42953px;
+        margin-top: 0; }
+  .view-content-block .views-row.views-row-even {
+    background-color: #f2f2f2;
+    background-image: url(../img/bg-content-block-even.png);
+    background-position: top right;
+    color: #146b36; }
+    .view-content-block .views-row.views-row-even .views-field-field-link {
+      width: 0;
+      height: 0;
+      border: 71px solid transparent;
+      border-bottom-color: #146b36;
+      position: relative;
+      top: -71px;
+      display: block;
+      z-index: 5; }
+      .view-content-block .views-row.views-row-even .views-field-field-link:after {
+        content: "";
+        position: absolute;
+        left: -71px;
+        top: 71px;
+        width: 0;
+        height: 0;
+        border: 71px solid transparent;
+        border-top-color: #146b36; }
+      .view-content-block .views-row.views-row-even .views-field-field-link:before {
+        content: "";
+        background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+        background-size: 100%;
+        position: absolute;
+        height: 144.85906px;
+        width: 144.85906px;
+        margin-left: -71.42953px;
+        margin-top: 0; }
+      .view-content-block .views-row.views-row-even .views-field-field-link a {
+        color: #fff; }
+  .view-content-block .views-row .views-field-field-link a:hover {
+    text-decoration: underline; }
+.view-content-block .views-field {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px; }
+.view-content-block .views-field-field-link {
+  margin: 0 auto;
+  padding: 0; }
+  .view-content-block .views-field-field-link > div {
+    display: table;
+    width: 142px;
+    height: 142px;
+    margin-left: -71px; }
+  .view-content-block .views-field-field-link a {
+    font-size: 24px;
+    text-transform: lowercase;
+    text-decoration: none;
+    z-index: 2;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle; }
+
+#block-views-news-block {
+  background: url(../img/bg-news-odd.png) bottom left no-repeat;
+  text-align: center; }
+  #block-views-news-block > .content {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+    padding: 50px 10px; }
+  #block-views-news-block .news-block-header {
+    width: 0;
+    height: 0;
+    border: 149px solid transparent;
+    border-bottom-color: black;
+    position: relative;
+    top: -149px;
+    display: block;
+    z-index: 5;
+    top: -149px;
+    margin: 0 auto; }
+    #block-views-news-block .news-block-header:after {
+      content: "";
+      position: absolute;
+      left: -149px;
+      top: 149px;
+      width: 0;
+      height: 0;
+      border: 149px solid transparent;
+      border-top-color: black; }
+    #block-views-news-block .news-block-header:before {
+      content: "";
+      background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+      background-size: 100%;
+      position: absolute;
+      height: 304.0px;
+      width: 304.0px;
+      margin-left: -151.0px;
+      margin-top: 0; }
+    #block-views-news-block .news-block-header > div {
+      display: table;
+      width: 298px;
+      height: 298px;
+      margin-left: -149px; }
+    #block-views-news-block .news-block-header h2 {
+      font-size: 2.8125em;
+      text-transform: lowercase;
+      color: white;
+      display: table-cell;
+      vertical-align: middle;
+      z-index: 2;
+      position: relative;
+      text-align: center; }
+  #block-views-news-block .views-row {
+    width: 0;
+    height: 0;
+    border: 149px solid transparent;
+    border-bottom-color: #146b36;
+    position: relative;
+    top: -149px;
+    display: block;
+    z-index: 5;
+    top: -149px;
+    margin: 1em auto;
+    color: white;
+    text-align: center;
+    display: none; }
+    #block-views-news-block .views-row:after {
+      content: "";
+      position: absolute;
+      left: -149px;
+      top: 149px;
+      width: 0;
+      height: 0;
+      border: 149px solid transparent;
+      border-top-color: #146b36; }
+    #block-views-news-block .views-row:before {
+      content: "";
+      background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+      background-size: 100%;
+      position: absolute;
+      height: 304.0px;
+      width: 304.0px;
+      margin-left: -151.0px;
+      margin-top: 0; }
+    #block-views-news-block .views-row.views-row-first {
+      display: block; }
+    #block-views-news-block .views-row h3 {
+      font-size: 18px; }
+      #block-views-news-block .views-row h3 a {
+        color: white; }
+    #block-views-news-block .views-row .views-field {
+      width: 298px;
+      margin-left: -149px;
+      z-index: 2;
+      position: relative; }
+    #block-views-news-block .views-row .views-field-title {
+      display: table;
+      margin-top: 60px;
+      height: 89px;
+      padding: 0 60px; }
+      #block-views-news-block .views-row .views-field-title h3 {
+        display: table-cell;
+        vertical-align: middle; }
+    #block-views-news-block .views-row .views-field-body {
+      font-size: 14px;
+      display: table;
+      margin-bottom: 30px;
+      height: 80px;
+      padding: 0 70px; }
+      #block-views-news-block .views-row .views-field-body .field-content {
+        display: table-cell;
+        vertical-align: middle; }
+    #block-views-news-block .views-row .views-field-field-date {
+      position: absolute;
+      clip: rect(1px, 1px, 1px, 1px);
+      overflow: hidden;
+      height: 1px; }
+  #block-views-news-block .more-link {
+    width: 0;
+    height: 0;
+    border: 71px solid transparent;
+    border-bottom-color: black;
+    position: relative;
+    top: -71px;
+    display: block;
+    z-index: 5;
+    margin: 0 auto; }
+    #block-views-news-block .more-link:after {
+      content: "";
+      position: absolute;
+      left: -71px;
+      top: 71px;
+      width: 0;
+      height: 0;
+      border: 71px solid transparent;
+      border-top-color: black; }
+    #block-views-news-block .more-link:before {
+      content: "";
+      background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+      background-size: 100%;
+      position: absolute;
+      height: 144.85906px;
+      width: 144.85906px;
+      margin-left: -71.42953px;
+      margin-top: 0; }
+    #block-views-news-block .more-link > div {
+      display: table;
+      height: 142px;
+      width: 142px;
+      margin-left: -71px; }
+    #block-views-news-block .more-link a {
+      font-size: 1.5em;
+      color: white;
+      display: table-cell;
+      vertical-align: middle;
+      width: 142px;
+      height: 142px;
+      text-align: center;
+      position: relative;
+      z-index: 2; }
+
+.page-entrepreneurs-in-action .region-content .views-field,
+.node-type-entrepreneurs-in-action .region-content .views-field,
+.page-news .region-content .views-field,
+.node-type-news .region-content .views-field,
+.page-young-entrepreneurs .region-content .views-field,
+.view-young-entrepreneurs .region-content .views-field,
+.page-node-23 .region-content .views-field,
+.page-services-for-entrepreneurs-resources .region-content .views-field {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin: 1em auto; }
+.page-entrepreneurs-in-action .region-content .views-field-field-image img,
+.page-entrepreneurs-in-action .region-content .field-name-field-image img,
+.page-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id img,
+.node-type-entrepreneurs-in-action .region-content .views-field-field-image img,
+.node-type-entrepreneurs-in-action .region-content .field-name-field-image img,
+.node-type-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id img,
+.page-news .region-content .views-field-field-image img,
+.page-news .region-content .field-name-field-image img,
+.page-news .region-content .views-field-field-youtube-video-id img,
+.node-type-news .region-content .views-field-field-image img,
+.node-type-news .region-content .field-name-field-image img,
+.node-type-news .region-content .views-field-field-youtube-video-id img,
+.page-young-entrepreneurs .region-content .views-field-field-image img,
+.page-young-entrepreneurs .region-content .field-name-field-image img,
+.page-young-entrepreneurs .region-content .views-field-field-youtube-video-id img,
+.view-young-entrepreneurs .region-content .views-field-field-image img,
+.view-young-entrepreneurs .region-content .field-name-field-image img,
+.view-young-entrepreneurs .region-content .views-field-field-youtube-video-id img,
+.page-node-23 .region-content .views-field-field-image img,
+.page-node-23 .region-content .field-name-field-image img,
+.page-node-23 .region-content .views-field-field-youtube-video-id img,
+.page-services-for-entrepreneurs-resources .region-content .views-field-field-image img,
+.page-services-for-entrepreneurs-resources .region-content .field-name-field-image img,
+.page-services-for-entrepreneurs-resources .region-content .views-field-field-youtube-video-id img {
+  height: auto;
+  float: left;
+  border: 1px solid white;
+  -webkit-box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.3); }
+.page-entrepreneurs-in-action .region-content .views-field-title,
+.page-entrepreneurs-in-action .region-content .field-name-field-title,
+.node-type-entrepreneurs-in-action .region-content .views-field-title,
+.node-type-entrepreneurs-in-action .region-content .field-name-field-title,
+.page-news .region-content .views-field-title,
+.page-news .region-content .field-name-field-title,
+.node-type-news .region-content .views-field-title,
+.node-type-news .region-content .field-name-field-title,
+.page-young-entrepreneurs .region-content .views-field-title,
+.page-young-entrepreneurs .region-content .field-name-field-title,
+.view-young-entrepreneurs .region-content .views-field-title,
+.view-young-entrepreneurs .region-content .field-name-field-title,
+.page-node-23 .region-content .views-field-title,
+.page-node-23 .region-content .field-name-field-title,
+.page-services-for-entrepreneurs-resources .region-content .views-field-title,
+.page-services-for-entrepreneurs-resources .region-content .field-name-field-title {
+  clear: both; }
+  .page-entrepreneurs-in-action .region-content .views-field-title h2,
+  .page-entrepreneurs-in-action .region-content .field-name-field-title h2,
+  .node-type-entrepreneurs-in-action .region-content .views-field-title h2,
+  .node-type-entrepreneurs-in-action .region-content .field-name-field-title h2,
+  .page-news .region-content .views-field-title h2,
+  .page-news .region-content .field-name-field-title h2,
+  .node-type-news .region-content .views-field-title h2,
+  .node-type-news .region-content .field-name-field-title h2,
+  .page-young-entrepreneurs .region-content .views-field-title h2,
+  .page-young-entrepreneurs .region-content .field-name-field-title h2,
+  .view-young-entrepreneurs .region-content .views-field-title h2,
+  .view-young-entrepreneurs .region-content .field-name-field-title h2,
+  .page-node-23 .region-content .views-field-title h2,
+  .page-node-23 .region-content .field-name-field-title h2,
+  .page-services-for-entrepreneurs-resources .region-content .views-field-title h2,
+  .page-services-for-entrepreneurs-resources .region-content .field-name-field-title h2 {
+    margin-top: 0; }
+.page-entrepreneurs-in-action .region-content .news-more,
+.node-type-entrepreneurs-in-action .region-content .news-more,
+.page-news .region-content .news-more,
+.node-type-news .region-content .news-more,
+.page-young-entrepreneurs .region-content .news-more,
+.view-young-entrepreneurs .region-content .news-more,
+.page-node-23 .region-content .news-more,
+.page-services-for-entrepreneurs-resources .region-content .news-more {
+  width: 0;
+  height: 0;
+  border: 27px solid transparent;
+  border-bottom-color: #146b36;
+  position: relative;
+  top: -27px;
+  display: block;
+  z-index: 5; }
+  .page-entrepreneurs-in-action .region-content .news-more:after,
+  .node-type-entrepreneurs-in-action .region-content .news-more:after,
+  .page-news .region-content .news-more:after,
+  .node-type-news .region-content .news-more:after,
+  .page-young-entrepreneurs .region-content .news-more:after,
+  .view-young-entrepreneurs .region-content .news-more:after,
+  .page-node-23 .region-content .news-more:after,
+  .page-services-for-entrepreneurs-resources .region-content .news-more:after {
+    content: "";
+    position: absolute;
+    left: -27px;
+    top: 27px;
+    width: 0;
+    height: 0;
+    border: 27px solid transparent;
+    border-top-color: #146b36; }
+  .page-entrepreneurs-in-action .region-content .news-more:before,
+  .node-type-entrepreneurs-in-action .region-content .news-more:before,
+  .page-news .region-content .news-more:before,
+  .node-type-news .region-content .news-more:before,
+  .page-young-entrepreneurs .region-content .news-more:before,
+  .view-young-entrepreneurs .region-content .news-more:before,
+  .page-node-23 .region-content .news-more:before,
+  .page-services-for-entrepreneurs-resources .region-content .news-more:before {
+    content: "";
+    background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+    background-size: 100%;
+    position: absolute;
+    height: 55.08725px;
+    width: 55.08725px;
+    margin-left: -26.54362px;
+    margin-top: 0; }
+  .page-entrepreneurs-in-action .region-content .news-more a,
+  .node-type-entrepreneurs-in-action .region-content .news-more a,
+  .page-news .region-content .news-more a,
+  .node-type-news .region-content .news-more a,
+  .page-young-entrepreneurs .region-content .news-more a,
+  .view-young-entrepreneurs .region-content .news-more a,
+  .page-node-23 .region-content .news-more a,
+  .page-services-for-entrepreneurs-resources .region-content .news-more a {
+    width: 54px;
+    height: 54px;
+    margin-left: -27px;
+    display: block;
+    position: relative;
+    z-index: 2;
+    background: url(../img/icon-plus.png) center center no-repeat; }
+.page-entrepreneurs-in-action .region-content .views-row,
+.node-type-entrepreneurs-in-action .region-content .views-row,
+.page-news .region-content .views-row,
+.node-type-news .region-content .views-row,
+.page-young-entrepreneurs .region-content .views-row,
+.view-young-entrepreneurs .region-content .views-row,
+.page-node-23 .region-content .views-row,
+.page-services-for-entrepreneurs-resources .region-content .views-row {
+  background-repeat: no-repeat;
+  padding: 20px 0;
+  -webkit-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  -ms-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25); }
+.page-entrepreneurs-in-action .region-content .views-row-odd,
+.node-type-entrepreneurs-in-action .region-content .views-row-odd,
+.page-news .region-content .views-row-odd,
+.node-type-news .region-content .views-row-odd,
+.page-young-entrepreneurs .region-content .views-row-odd,
+.view-young-entrepreneurs .region-content .views-row-odd,
+.page-node-23 .region-content .views-row-odd,
+.page-services-for-entrepreneurs-resources .region-content .views-row-odd {
+  background-color: #fff;
+  background-image: url(../img/bg-news-odd.png);
+  background-position: bottom left; }
+.page-entrepreneurs-in-action .region-content .views-row-even,
+.node-type-entrepreneurs-in-action .region-content .views-row-even,
+.page-news .region-content .views-row-even,
+.node-type-news .region-content .views-row-even,
+.page-young-entrepreneurs .region-content .views-row-even,
+.view-young-entrepreneurs .region-content .views-row-even,
+.page-node-23 .region-content .views-row-even,
+.page-services-for-entrepreneurs-resources .region-content .views-row-even {
+  background-color: #f2f2f2;
+  background-image: url(../img/bg-content-block-even.png);
+  background-position: top right; }
+
+.page-news .views-field-field-image img,
+.page-news .field-name-field-image img,
+.node-type-news .views-field-field-image img,
+.node-type-news .field-name-field-image img {
+  width: 241px; }
+.page-news .views-field-field-image + .views-field-field-date,
+.page-news .views-field-field-image + .field-name-field-date,
+.page-news .field-name-field-image + .views-field-field-date,
+.page-news .field-name-field-image + .field-name-field-date,
+.node-type-news .views-field-field-image + .views-field-field-date,
+.node-type-news .views-field-field-image + .field-name-field-date,
+.node-type-news .field-name-field-image + .views-field-field-date,
+.node-type-news .field-name-field-image + .field-name-field-date {
+  float: left;
+  width: auto;
+  margin: 50px 0 65px -72px;
+  padding: 0; }
+.page-news .region-content .views-row,
+.node-type-news .region-content .views-row {
+  min-height: 376px; }
+.page-news .region-content .views-field-field-date > div,
+.page-news .region-content .field-name-field-date > div,
+.node-type-news .region-content .views-field-field-date > div,
+.node-type-news .region-content .field-name-field-date > div {
+  width: 0;
+  height: 0;
+  border: 61px solid transparent;
+  border-bottom-color: #146b36;
+  position: relative;
+  top: -61px;
+  display: block;
+  z-index: 5;
+  text-align: center;
+  float: left;
+  margin-right: 18px;
+  margin-bottom: 1em;
+  right: -10px; }
+  .page-news .region-content .views-field-field-date > div:after,
+  .page-news .region-content .field-name-field-date > div:after,
+  .node-type-news .region-content .views-field-field-date > div:after,
+  .node-type-news .region-content .field-name-field-date > div:after {
+    content: "";
+    position: absolute;
+    left: -61px;
+    top: 61px;
+    width: 0;
+    height: 0;
+    border: 61px solid transparent;
+    border-top-color: #146b36; }
+  .page-news .region-content .views-field-field-date > div:before,
+  .page-news .region-content .field-name-field-date > div:before,
+  .node-type-news .region-content .views-field-field-date > div:before,
+  .node-type-news .region-content .field-name-field-date > div:before {
+    content: "";
+    background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+    background-size: 100%;
+    position: absolute;
+    height: 124.45638px;
+    width: 124.45638px;
+    margin-left: -61.22819px;
+    margin-top: 0; }
+  .page-news .region-content .views-field-field-date > div > div,
+  .page-news .region-content .field-name-field-date > div > div,
+  .node-type-news .region-content .views-field-field-date > div > div,
+  .node-type-news .region-content .field-name-field-date > div > div {
+    display: table;
+    width: 122px;
+    height: 122px;
+    margin-left: -61px; }
+.page-news .region-content .views-field-field-date span.date-display-single,
+.page-news .region-content .field-name-field-date span.date-display-single,
+.node-type-news .region-content .views-field-field-date span.date-display-single,
+.node-type-news .region-content .field-name-field-date span.date-display-single {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  z-index: 2;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle; }
+
+.node-type-news .region-content .field-name-body {
+  clear: both; }
+
+.page-entrepreneurs-in-action #page-title {
+  text-align: center; }
+  .page-entrepreneurs-in-action #page-title > div > div {
+    padding: 10px 0; }
+  .page-entrepreneurs-in-action #page-title p {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 0; }
+
+.page-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id .field-content,
+.node-type-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id .field-content {
+  position: relative;
+  display: inline-block; }
+.page-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id .play.youtube,
+.node-type-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id .play.youtube {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  background: url(../img/icon-play.png) center center no-repeat; }
+.page-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id iframe,
+.node-type-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 460px; }
+.page-entrepreneurs-in-action .region-content .views-field-field-image,
+.page-entrepreneurs-in-action .region-content .field-name-field-image,
+.page-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id,
+.node-type-entrepreneurs-in-action .region-content .views-field-field-image,
+.node-type-entrepreneurs-in-action .region-content .field-name-field-image,
+.node-type-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+  .page-entrepreneurs-in-action .region-content .views-field-field-image img,
+  .page-entrepreneurs-in-action .region-content .field-name-field-image img,
+  .page-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id img,
+  .node-type-entrepreneurs-in-action .region-content .views-field-field-image img,
+  .node-type-entrepreneurs-in-action .region-content .field-name-field-image img,
+  .node-type-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id img {
+    max-width: 460px;
+    width: 100%;
+    height: auto; }
+.page-entrepreneurs-in-action .region-content .views-field-title,
+.page-entrepreneurs-in-action .region-content .field-name-field-title,
+.node-type-entrepreneurs-in-action .region-content .views-field-title,
+.node-type-entrepreneurs-in-action .region-content .field-name-field-title {
+  margin-top: 0; }
+
+#block-views-site-tweets-block {
+  padding: 40px 0;
+  background: #146b36 url(../img/bg-tweets.png) bottom right no-repeat; }
+  #block-views-site-tweets-block > h2 {
+    text-align: center;
+    margin: 0 0 .5555em 0;
+    text-transform: lowercase;
+    font-size: 2.8125em;
+    font-weight: lighter;
+    letter-spacing: -10;
+    color: #fff;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25); }
+  #block-views-site-tweets-block > .content {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px; }
+  #block-views-site-tweets-block .views-field-profile-image-url {
+    width: 0;
+    height: 0;
+    border: 40px solid transparent;
+    border-bottom-color: #fff;
+    position: relative;
+    top: -40px;
+    display: block;
+    z-index: 5;
+    position: absolute;
+    left: -140px; }
+    #block-views-site-tweets-block .views-field-profile-image-url:after {
+      content: "";
+      position: absolute;
+      left: -40px;
+      top: 40px;
+      width: 0;
+      height: 0;
+      border: 40px solid transparent;
+      border-top-color: #fff; }
+    #block-views-site-tweets-block .views-field-profile-image-url:before {
+      content: "";
+      background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+      background-size: 100%;
+      position: absolute;
+      height: 81.61074px;
+      width: 81.61074px;
+      margin-left: -39.80537px;
+      margin-top: 0; }
+    #block-views-site-tweets-block .views-field-profile-image-url .field-content {
+      height: 80px;
+      width: 80px;
+      margin-left: -40px;
+      display: block;
+      text-align: center; }
+    #block-views-site-tweets-block .views-field-profile-image-url img {
+      margin-top: 20px;
+      position: relative;
+      z-index: 2;
+      width: 40px;
+      height: auto; }
+  #block-views-site-tweets-block .views-row {
+    width: 0;
+    height: 0;
+    border: 149px solid transparent;
+    border-bottom-color: #fff;
+    position: relative;
+    top: -149px;
+    display: block;
+    z-index: 5;
+    margin: 1em auto;
+    display: none; }
+    #block-views-site-tweets-block .views-row:after {
+      content: "";
+      position: absolute;
+      left: -149px;
+      top: 149px;
+      width: 0;
+      height: 0;
+      border: 149px solid transparent;
+      border-top-color: #fff; }
+    #block-views-site-tweets-block .views-row:before {
+      content: "";
+      background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+      background-size: 100%;
+      position: absolute;
+      height: 304.0px;
+      width: 304.0px;
+      margin-left: -151.0px;
+      margin-top: 0; }
+    #block-views-site-tweets-block .views-row.views-row-first {
+      display: block; }
+  #block-views-site-tweets-block .views-field-created-time,
+  #block-views-site-tweets-block .views-field-text,
+  #block-views-site-tweets-block .views-field-web-intents {
+    display: table;
+    font-size: 0.875em;
+    text-align: center;
+    padding: 0 50px;
+    width: 298px;
+    margin-left: -149px;
+    position: relative;
+    z-index: 2; }
+  #block-views-site-tweets-block .views-field-created-time {
+    color: #146b36;
+    margin-top: 70px;
+    font-size: 1em; }
+  #block-views-site-tweets-block .views-field-text {
+    color: #000;
+    margin-top: 40px; }
+    #block-views-site-tweets-block .views-field-text:before {
+      content: '';
+      background: url(../img/bg-tweet.png) no-repeat;
+      background-position: center center;
+      width: 143px;
+      height: 117px;
+      display: block;
+      position: absolute;
+      top: -30px;
+      left: 79px;
+      z-index: -1; }
+  #block-views-site-tweets-block .views-field-web-intents {
+    position: absolute;
+    top: 210px; }
+
+#block-views-logo-block-block {
+  background: url(../img/bg-page-title-shadow-top.png) top center repeat-x;
+  display: table;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  z-index: 6; }
+  #block-views-logo-block-block .content {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: hidden;
+    height: 140px; }
+  #block-views-logo-block-block .view-content {
+    width: 1280px;
+    padding: 0 10px; }
+  #block-views-logo-block-block .views-row {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-left: 50px; }
+    #block-views-logo-block-block .views-row.views-row-first {
+      margin-left: 0; }
+  #block-views-logo-block-block .field-content {
+    display: table-cell;
+    vertical-align: middle;
+    height: 140px; }
+  #block-views-logo-block-block img {
+    width: auto;
+    max-height: 60px;
+    height: auto;
+    vertical-align: middle;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; }
+    #block-views-logo-block-block img:hover {
+      -webkit-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+      -ms-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
+      filter: grayscale(0%); }
+
+.view-resources .field-content ul {
+  padding: 0; }
+  .view-resources .field-content ul li {
+    list-style: none;
+    margin: 5px 0; }
+    .view-resources .field-content ul li a {
+      color: #000; }
+      .view-resources .field-content ul li a:hover {
+        color: #146b36; }
+
+.twitter-block-footer {
+  position: relative;
+  float: left;
+  height: 17px;
+  width: 24px;
+  margin-right: 10px; }
+
+.btn-menu, .twitter {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .btn-menu a, .twitter a {
+    position: absolute;
+    margin-left: -20px;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    z-index: 7; }
+    .region-footer .btn-menu a, .region-footer .twitter a {
+      height: 24px;
+      width: 24px;
+      margin-left: -12px; }
+  .btn-menu:after, .twitter:after {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+
+.btn-menu {
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom-color: #146b36;
+  position: relative;
+  top: -20px;
+  display: block;
+  z-index: 5;
+  z-index: 7;
+  float: right;
+  margin-top: 10px; }
+  .btn-menu:after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #146b36; }
+  .btn-menu:before {
+    content: "";
+    background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+    background-size: 100%;
+    position: absolute;
+    height: 40.80537px;
+    width: 40.80537px;
+    margin-left: -19.40268px;
+    margin-top: 0; }
+  .open-menu .btn-menu {
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+    position: relative;
+    top: -20px;
+    display: block;
+    z-index: 5;
+    z-index: 7; }
+    .open-menu .btn-menu:after {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 20px;
+      width: 0;
+      height: 0;
+      border: 20px solid transparent;
+      border-top-color: #fff; }
+    .open-menu .btn-menu:before {
+      content: "";
+      background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+      background-size: 100%;
+      position: absolute;
+      height: 40.80537px;
+      width: 40.80537px;
+      margin-left: -19.40268px;
+      margin-top: 0; }
+
+.icon-bar {
+  position: relative;
+  z-index: 2;
+  margin: 12px 0 0 -9px;
+  display: block;
+  width: 18px;
+  height: 3px;
+  background-color: #fff;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px; }
+  .open-menu .icon-bar {
+    background-color: #146b36;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px; }
+
+.icon-bar + .icon-bar {
+  margin-top: 3px; }
+
+.region-navigation .twitter {
+  left: auto;
+  padding: 0;
+  text-indent: -9999px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom-color: #146b36;
+  position: relative;
+  top: -20px;
+  display: block;
+  z-index: 5;
+  z-index: 7;
+  float: right;
+  margin: 10px 10px 0; }
+  .region-navigation .twitter:after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #146b36; }
+  .region-navigation .twitter:before {
+    content: "";
+    background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+    background-size: 100%;
+    position: absolute;
+    height: 40.80537px;
+    width: 40.80537px;
+    margin-left: -19.40268px;
+    margin-top: 0; }
+  .open-menu .region-navigation .twitter {
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: #fff;
+    position: relative;
+    top: -20px;
+    display: block;
+    z-index: 5;
+    z-index: 7; }
+    .open-menu .region-navigation .twitter:after {
+      content: "";
+      position: absolute;
+      left: -20px;
+      top: 20px;
+      width: 0;
+      height: 0;
+      border: 20px solid transparent;
+      border-top-color: #fff; }
+    .open-menu .region-navigation .twitter:before {
+      content: "";
+      background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+      background-size: 100%;
+      position: absolute;
+      height: 40.80537px;
+      width: 40.80537px;
+      margin-left: -19.40268px;
+      margin-top: 0; }
+    .open-menu .region-navigation .twitter a {
+      background: url(../img/icon-twitter-hover.png) center center no-repeat; }
+  .region-navigation .twitter a {
+    background: url(../img/icon-twitter.png) center center no-repeat; }
+.region-footer .twitter {
+  padding: 0;
+  text-indent: -9999px;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-bottom-color: white;
+  position: relative;
+  top: -12px;
+  display: block;
+  z-index: 5;
+  position: absolute;
+  z-index: 5; }
+  .region-footer .twitter:after {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-top-color: white; }
+  .region-footer .twitter:before {
+    content: "";
+    background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+    background-size: 100%;
+    position: absolute;
+    height: 24.48322px;
+    width: 24.48322px;
+    margin-left: -11.24161px;
+    margin-top: 0; }
+  .region-footer .twitter:before {
+    content: '';
+    position: absolute;
+    background: url(../img/icon-twitter-footer.png) center center no-repeat;
+    height: 12px;
+    width: 12px;
+    top: 5px;
+    left: -6px;
+    z-index: 2;
+    margin: 0;
+    background-size: 100%; }
+
+#block-system-main-menu {
+  width: 100%;
+  float: right;
+  clear: both;
+  position: absolute;
+  background: #146b36; }
+  #block-system-main-menu li.expanded > ul.menu {
+    display: none;
+    position: absolute;
+    background: #146b36; }
+    #block-system-main-menu li.expanded > ul.menu li {
+      float: none; }
+  #block-system-main-menu li.expanded:hover > ul.menu {
+    display: block; }
+  #block-system-main-menu ul {
+    margin: 0;
+    overflow: hidden;
+    max-width: 960px;
+    margin: 0 auto; }
+    #block-system-main-menu ul li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      float: left;
+      max-width: 130px;
+      border-top: 1px solid #4f9068; }
+      #block-system-main-menu ul li:first-child {
+        border-top: 0; }
+      #block-system-main-menu ul li li {
+        padding-left: 38px; }
+        #block-system-main-menu ul li li.first {
+          border-top: 1px solid #4f9068; }
+    #block-system-main-menu ul a,
+    #block-system-main-menu ul span {
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 15px 0;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      padding-right: 20px;
+      cursor: pointer; }
+      #block-system-main-menu ul a:hover,
+      #block-system-main-menu ul span:hover {
+        background: url(../img/icon-menu-arrow-hover.png) center right no-repeat; }
+    #block-system-main-menu ul ul {
+      padding: 0; }
+
+#block-menu-menu-footer {
+  float: left; }
+  #block-menu-menu-footer ul {
+    margin: 6px 0 0 0;
+    padding: 0; }
+  #block-menu-menu-footer ul, #block-menu-menu-footer li {
+    list-style: none; }
+  #block-menu-menu-footer li {
+    float: left;
+    line-height: 12px;
+    padding: 0 10px;
+    margin: 0;
+    border-left: 1px solid #fff; }
+  #block-menu-menu-footer a {
+    color: #fff; }
+
+#site-map {
+  font-size: 1.3em; }
+  #site-map ul {
+    padding: 0; }
+    #site-map ul li {
+      color: #146b36;
+      list-style: none;
+      margin: 5px 0; }
+    #site-map ul ul li {
+      margin: 0; }
+
+.clear {
+  clear: both; }
+
+.sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px; }
+
+.text-helv {
+  font-family: Helvetica, Arial, sans-serif; }
+
+#block-views-content-block-block .views-row-1 .word5 {
+  color: black; }
+#block-views-content-block-block .views-row-2 .word2, #block-views-content-block-block .views-row-2 .word3 {
+  color: black; }
+#block-views-content-block-block .views-field-field-link .word2 {
+  color: black; }
+
+#block-views-site-tweets-block .word2 {
+  color: black; }
+
+#block-views-news-block .word2 {
+  color: #146b36; }
+
+.page-node-15 .word2 {
+  color: black; }
+
+.page-entrepreneurs-in-action .word3 {
+  color: black; }
+
+.page-node-23 .word2,
+.page-node-26 .word2 {
+  color: black; }
+
+.page-node-33 .word2, .page-node-33 .word3 {
+  color: black; }
+
+.page-news .word2 {
+  color: black; }
+
+.page-young-entrepreneurs .word2 {
+  color: black; }
+
+.page-sitemap .word2 {
+  color: black; }
+
+@media only screen and (min-width: 480px) {
+  #block-views-slideshow-block .views-field-field-slideshow-text {
+    font-size: 28px;
+    bottom: 1em;
+    right: 1em; }
+
+  .page-news .region-content .views-field-field-date > div,
+  .page-news .region-content .field-name-field-date > div,
+  .node-type-news .region-content .views-field-field-date > div,
+  .node-type-news .region-content .field-name-field-date > div {
+    width: 0;
+    height: 0;
+    border: 71px solid transparent;
+    border-bottom-color: #146b36;
+    position: relative;
+    top: -71px;
+    display: block;
+    z-index: 5;
+    text-align: center;
+    float: left;
+    margin-right: 18px;
+    right: 0; }
+    .page-news .region-content .views-field-field-date > div:after,
+    .page-news .region-content .field-name-field-date > div:after,
+    .node-type-news .region-content .views-field-field-date > div:after,
+    .node-type-news .region-content .field-name-field-date > div:after {
+      content: "";
+      position: absolute;
+      left: -71px;
+      top: 71px;
+      width: 0;
+      height: 0;
+      border: 71px solid transparent;
+      border-top-color: #146b36; }
+    .page-news .region-content .views-field-field-date > div:before,
+    .page-news .region-content .field-name-field-date > div:before,
+    .node-type-news .region-content .views-field-field-date > div:before,
+    .node-type-news .region-content .field-name-field-date > div:before {
+      content: "";
+      background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+      background-size: 100%;
+      position: absolute;
+      height: 144.85906px;
+      width: 144.85906px;
+      margin-left: -71.42953px;
+      margin-top: 0; }
+    .page-news .region-content .views-field-field-date > div > div,
+    .page-news .region-content .field-name-field-date > div > div,
+    .node-type-news .region-content .views-field-field-date > div > div,
+    .node-type-news .region-content .field-name-field-date > div > div {
+      display: table;
+      width: 142px;
+      height: 142px;
+      margin-left: -71px; }
+  .page-news .region-content .views-field-field-date span.date-display-single,
+  .page-news .region-content .field-name-field-date span.date-display-single,
+  .node-type-news .region-content .views-field-field-date span.date-display-single,
+  .node-type-news .region-content .field-name-field-date span.date-display-single {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    z-index: 2;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle; } }
+@media only screen and (min-width: 760px) {
+  .region-footer {
+    display: block; }
+
+  #footer-info {
+    float: right; }
+
+  #copyright, #site-by-cci {
+    margin: 3px 0 0; }
+
+  #block-views-slideshow-block .views-field-field-slideshow-text {
+    font-size: 44px; }
+  #block-views-slideshow-block .views-field-field-image:before {
+    content: "";
+    background: url(../img/bg-slideshow.png) bottom right no-repeat;
+    position: absolute;
+    z-index: 3;
+    width: 505px;
+    height: 429px;
+    bottom: 0;
+    right: 0;
+    background-size: 100%; }
+  #block-views-slideshow-block .indicators {
+    margin-top: 30px; }
+
+  #block-views-site-tweets-block {
+    text-align: center; }
+    #block-views-site-tweets-block .views-row.views-row-1, #block-views-site-tweets-block .views-row.views-row-2 {
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      margin: 1em 30px; }
+
+  #block-views-news-block .views-row {
+    margin: 1em 30px; }
+  #block-views-news-block .news-block-header {
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-bottom-color: black;
+    position: relative;
+    top: -100px;
+    display: block;
+    z-index: 5;
+    margin: 0 auto; }
+    #block-views-news-block .news-block-header:after {
+      content: "";
+      position: absolute;
+      left: -100px;
+      top: 100px;
+      width: 0;
+      height: 0;
+      border: 100px solid transparent;
+      border-top-color: black; }
+    #block-views-news-block .news-block-header:before {
+      content: "";
+      background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+      background-size: 100%;
+      position: absolute;
+      height: 204.02685px;
+      width: 204.02685px;
+      margin-left: -101.01342px;
+      margin-top: 0; }
+    #block-views-news-block .news-block-header > div {
+      display: table;
+      width: 200px;
+      height: 200px;
+      margin-left: -100px; }
+    #block-views-news-block .news-block-header h2 {
+      font-size: 1.8125em;
+      text-transform: lowercase;
+      color: white;
+      display: table-cell;
+      vertical-align: middle;
+      z-index: 2;
+      position: relative;
+      text-align: center; }
+  #block-views-news-block .block-view-grid {
+    float: left;
+    width: 50%; }
+  #block-views-news-block .view-content {
+    margin-top: -130px; }
+  #block-views-news-block .view-news {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: relative; }
+  #block-views-news-block .views-row-3 {
+    display: block; }
+  #block-views-news-block .view-footer {
+    clear: both;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-top: -100px;
+    width: 100%; }
+
+  .view-news .views-field-field-image img {
+    display: block; }
+  .view-news .views-field-title {
+    clear: none; }
+
+  .page-news .region-content .views-field-field-image ~ .views-field-title, .page-news .region-content .views-field-field-image ~ .views-field-body,
+  .page-news .region-content .views-field-field-image ~ .field-name-field-title, .page-news .region-content .views-field-field-image ~ .field-name-field-title,
+  .page-news .region-content .field-name-field-image ~ .views-field-title,
+  .page-news .region-content .field-name-field-image ~ .views-field-body,
+  .page-news .region-content .field-name-field-image ~ .field-name-field-title,
+  .page-news .region-content .field-name-field-image ~ .field-name-field-title,
+  .node-type-news .region-content .views-field-field-image ~ .views-field-title,
+  .node-type-news .region-content .views-field-field-image ~ .views-field-body,
+  .node-type-news .region-content .views-field-field-image ~ .field-name-field-title,
+  .node-type-news .region-content .views-field-field-image ~ .field-name-field-title,
+  .node-type-news .region-content .field-name-field-image ~ .views-field-title,
+  .node-type-news .region-content .field-name-field-image ~ .views-field-body,
+  .node-type-news .region-content .field-name-field-image ~ .field-name-field-title,
+  .node-type-news .region-content .field-name-field-image ~ .field-name-field-title {
+    padding-left: 340px; }
+  .page-news .region-content .views-field-field-image ~ .views-field-nothing .news-more,
+  .page-news .region-content .field-name-field-image ~ .views-field-nothing .news-more,
+  .node-type-news .region-content .views-field-field-image ~ .views-field-nothing .news-more,
+  .node-type-news .region-content .field-name-field-image ~ .views-field-nothing .news-more {
+    margin-left: 330px; }
+  .page-news .region-content .views-field-title,
+  .page-news .region-content .field-name-field-title,
+  .node-type-news .region-content .views-field-title,
+  .node-type-news .region-content .field-name-field-title {
+    padding-left: 170px;
+    clear: none; }
+  .page-news .region-content .views-field-field-date,
+  .page-news .region-content .field-name-field-date,
+  .node-type-news .region-content .views-field-field-date,
+  .node-type-news .region-content .field-name-field-date {
+    display: block; }
+  .page-news .region-content .news-more,
+  .node-type-news .region-content .news-more {
+    margin-left: 160px; }
+  .page-news .region-content .views-row,
+  .node-type-news .region-content .views-row {
+    padding: 50px 0; }
+
+  .page-news .region-content .views-field-body {
+    padding-left: 170px; }
+
+  .node-type-news .region-content .field-name-body {
+    margin-top: 1em;
+    clear: none; }
+
+  .page-entrepreneurs-in-action .region-content .views-field-title,
+  .page-entrepreneurs-in-action .region-content .field-name-field-title,
+  .page-entrepreneurs-in-action .region-content .field-name-field-business-name,
+  .page-entrepreneurs-in-action .region-content .views-field-field-entrepreneur-name,
+  .page-entrepreneurs-in-action .region-content .field-name-field-entrepreneur-name,
+  .page-entrepreneurs-in-action .region-content .views-field-body,
+  .page-entrepreneurs-in-action .region-content .field-name-body,
+  .page-entrepreneurs-in-action .region-content .views-field-field-link,
+  .page-entrepreneurs-in-action .region-content .field-name-field-link {
+    padding-left: 370px; }
+
+  .page-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id .field-content,
+  .node-type-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id .field-content {
+    float: left;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1; }
+  .page-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id .play.youtube,
+  .node-type-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id .play.youtube {
+    position: absolute;
+    width: 330px;
+    height: 186px;
+    cursor: pointer; }
+  .page-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id iframe,
+  .node-type-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id iframe {
+    position: absolute;
+    width: 100%;
+    max-width: 330px; }
+  .page-entrepreneurs-in-action .region-content .views-field-field-image,
+  .page-entrepreneurs-in-action .region-content .field-name-field-image,
+  .page-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id,
+  .node-type-entrepreneurs-in-action .region-content .views-field-field-image,
+  .node-type-entrepreneurs-in-action .region-content .field-name-field-image,
+  .node-type-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id {
+    display: block; }
+    .page-entrepreneurs-in-action .region-content .views-field-field-image img,
+    .page-entrepreneurs-in-action .region-content .field-name-field-image img,
+    .page-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id img,
+    .node-type-entrepreneurs-in-action .region-content .views-field-field-image img,
+    .node-type-entrepreneurs-in-action .region-content .field-name-field-image img,
+    .node-type-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id img {
+      max-width: 330px;
+      float: left; }
+  .page-entrepreneurs-in-action .region-content .views-field-title,
+  .page-entrepreneurs-in-action .region-content .field-name-field-title,
+  .node-type-entrepreneurs-in-action .region-content .views-field-title,
+  .node-type-entrepreneurs-in-action .region-content .field-name-field-title {
+    clear: none; }
+  .page-entrepreneurs-in-action .region-content .news-more,
+  .node-type-entrepreneurs-in-action .region-content .news-more {
+    margin-left: 360px; }
+  .page-entrepreneurs-in-action .region-content .views-row,
+  .node-type-entrepreneurs-in-action .region-content .views-row {
+    padding: 20px 0; }
+  .page-entrepreneurs-in-action .region-content .views-row-even .views-field-field-youtube-video-id .field-content,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .views-field-field-youtube-video-id .field-content {
+    float: right; }
+  .page-entrepreneurs-in-action .region-content .views-row-even .views-field-field-image img,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .views-field-field-image img {
+    float: right; }
+  .page-entrepreneurs-in-action .region-content .views-row-even .views-field-title,
+  .page-entrepreneurs-in-action .region-content .views-row-even .field-name-field-title,
+  .page-entrepreneurs-in-action .region-content .views-row-even .views-field-field-entrepreneur-name,
+  .page-entrepreneurs-in-action .region-content .views-row-even .views-field-body,
+  .page-entrepreneurs-in-action .region-content .views-row-even .field-name-body,
+  .page-entrepreneurs-in-action .region-content .views-row-even .views-field-field-link,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .views-field-title,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .field-name-field-title,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .views-field-field-entrepreneur-name,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .views-field-body,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .field-name-body,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .views-field-field-link {
+    padding-right: 370px;
+    padding-left: 10px; }
+  .page-entrepreneurs-in-action .region-content .views-row-even .news-more,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .news-more {
+    margin-right: 360px;
+    margin-left: 0; }
+
+  .view-resources .field-content {
+    overflow: auto; }
+    .view-resources .field-content ul {
+      padding: 0 40px 0 0;
+      float: left;
+      width: 50%;
+      margin: 0; }
+
+  .btn-menu a, .twitter a {
+    height: 60px;
+    width: 60px;
+    margin-left: -30px; }
+
+  .btn-menu {
+    width: 0;
+    height: 0;
+    border: 30px solid transparent;
+    border-bottom-color: #146b36;
+    position: relative;
+    top: -30px;
+    display: block;
+    z-index: 5;
+    z-index: 7; }
+    .btn-menu:after {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 30px;
+      width: 0;
+      height: 0;
+      border: 30px solid transparent;
+      border-top-color: #146b36; }
+    .btn-menu:before {
+      content: "";
+      background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+      background-size: 100%;
+      position: absolute;
+      height: 61.20805px;
+      width: 61.20805px;
+      margin-left: -29.60403px;
+      margin-top: 0; }
+    .open-menu .btn-menu {
+      width: 0;
+      height: 0;
+      border: 30px solid transparent;
+      border-bottom-color: #fff;
+      position: relative;
+      top: -30px;
+      display: block;
+      z-index: 5;
+      z-index: 7; }
+      .open-menu .btn-menu:after {
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: 30px;
+        width: 0;
+        height: 0;
+        border: 30px solid transparent;
+        border-top-color: #fff; }
+      .open-menu .btn-menu:before {
+        content: "";
+        background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+        background-size: 100%;
+        position: absolute;
+        height: 61.20805px;
+        width: 61.20805px;
+        margin-left: -29.60403px;
+        margin-top: 0; }
+
+  .icon-bar {
+    margin: 22px 0 0 -13px;
+    width: 27px;
+    height: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; }
+    .open-menu .icon-bar {
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px; }
+
+  .region-navigation .twitter {
+    left: auto;
+    padding: 0;
+    text-indent: -9999px;
+    width: 0;
+    height: 0;
+    border: 30px solid transparent;
+    border-bottom-color: #146b36;
+    position: relative;
+    top: -30px;
+    display: block;
+    z-index: 5;
+    z-index: 7; }
+    .region-navigation .twitter:after {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 30px;
+      width: 0;
+      height: 0;
+      border: 30px solid transparent;
+      border-top-color: #146b36; }
+    .region-navigation .twitter:before {
+      content: "";
+      background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+      background-size: 100%;
+      position: absolute;
+      height: 61.20805px;
+      width: 61.20805px;
+      margin-left: -29.60403px;
+      margin-top: 0; }
+    .open-menu .region-navigation .twitter {
+      width: 0;
+      height: 0;
+      border: 30px solid transparent;
+      border-bottom-color: #fff;
+      position: relative;
+      top: -30px;
+      display: block;
+      z-index: 5;
+      z-index: 7; }
+      .open-menu .region-navigation .twitter:after {
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: 30px;
+        width: 0;
+        height: 0;
+        border: 30px solid transparent;
+        border-top-color: #fff; }
+      .open-menu .region-navigation .twitter:before {
+        content: "";
+        background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+        background-size: 100%;
+        position: absolute;
+        height: 61.20805px;
+        width: 61.20805px;
+        margin-left: -29.60403px;
+        margin-top: 0; }
+      .open-menu .region-navigation .twitter a {
+        background: url(../img/icon-twitter-large-hover.png) center center no-repeat; }
+    .region-navigation .twitter a {
+      background: url(../img/icon-twitter-large.png) center center no-repeat;
+      z-index: 7;
+      width: 60px;
+      height: 60px; }
+
+  #block-system-main-menu {
+    width: 100%; }
+
+  #block-menu-menu-footer a {
+    font-size: 14px; } }
+@media only screen and (min-width: 960px) {
+  #page-wrapper {
+    min-width: 960px; }
+
+  .container {
+    width: 960px; }
+
+  #block-views-news-block .views-row {
+    display: block;
+    margin: 1em 0; }
+  #block-views-news-block .news-block-header {
+    width: 0;
+    height: 0;
+    border: 149px solid transparent;
+    border-bottom-color: black;
+    position: relative;
+    top: -149px;
+    display: block;
+    z-index: 5;
+    top: -149px;
+    margin: 0 auto; }
+    #block-views-news-block .news-block-header:after {
+      content: "";
+      position: absolute;
+      left: -149px;
+      top: 149px;
+      width: 0;
+      height: 0;
+      border: 149px solid transparent;
+      border-top-color: black; }
+    #block-views-news-block .news-block-header:before {
+      content: "";
+      background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+      background-size: 100%;
+      position: absolute;
+      height: 304.0px;
+      width: 304.0px;
+      margin-left: -151.0px;
+      margin-top: 0; }
+    #block-views-news-block .news-block-header > div {
+      display: table;
+      width: 298px;
+      height: 298px;
+      margin-left: -149px; }
+    #block-views-news-block .news-block-header h2 {
+      font-size: 2.8125em;
+      text-transform: lowercase;
+      color: white;
+      display: table-cell;
+      vertical-align: middle;
+      z-index: 2;
+      position: relative;
+      text-align: center; }
+  #block-views-news-block .view-content {
+    margin-top: -314px; }
+  #block-views-news-block .block-view-grid {
+    float: left;
+    width: auto; }
+  #block-views-news-block .views-row-2 {
+    margin-left: 344px; }
+  #block-views-news-block .views-row-3,
+  #block-views-news-block .views-row-4 {
+    margin-top: -150px; }
+  #block-views-news-block .views-row-3 {
+    margin-left: 160px; }
+  #block-views-news-block .views-row-4 {
+    margin-left: 23px; }
+  #block-views-news-block .view-footer {
+    position: absolute;
+    bottom: 52px;
+    right: 38px;
+    width: auto; }
+
+  .page-entrepreneurs-in-action .region-content .views-field-title,
+  .page-entrepreneurs-in-action .region-content .field-name-field-title,
+  .page-entrepreneurs-in-action .region-content .field-name-field-business-name,
+  .page-entrepreneurs-in-action .region-content .views-field-field-entrepreneur-name,
+  .page-entrepreneurs-in-action .region-content .field-name-field-entrepreneur-name,
+  .page-entrepreneurs-in-action .region-content .views-field-body,
+  .page-entrepreneurs-in-action .region-content .field-name-body,
+  .page-entrepreneurs-in-action .region-content .views-field-field-link,
+  .page-entrepreneurs-in-action .region-content .field-name-field-link {
+    padding-left: 500px; }
+
+  .page-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id .play.youtube,
+  .node-type-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id .play.youtube {
+    position: absolute;
+    width: 460px;
+    height: 260px;
+    cursor: pointer; }
+  .page-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id iframe,
+  .node-type-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id iframe {
+    position: absolute;
+    width: 100%;
+    max-width: 460px; }
+  .page-entrepreneurs-in-action .region-content .views-field-field-image,
+  .page-entrepreneurs-in-action .region-content .field-name-field-image,
+  .page-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id,
+  .node-type-entrepreneurs-in-action .region-content .views-field-field-image,
+  .node-type-entrepreneurs-in-action .region-content .field-name-field-image,
+  .node-type-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id {
+    display: block; }
+    .page-entrepreneurs-in-action .region-content .views-field-field-image img,
+    .page-entrepreneurs-in-action .region-content .field-name-field-image img,
+    .page-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id img,
+    .node-type-entrepreneurs-in-action .region-content .views-field-field-image img,
+    .node-type-entrepreneurs-in-action .region-content .field-name-field-image img,
+    .node-type-entrepreneurs-in-action .region-content .views-field-field-youtube-video-id img {
+      max-width: 460px; }
+  .page-entrepreneurs-in-action .region-content .views-field-title,
+  .page-entrepreneurs-in-action .region-content .field-name-field-title,
+  .node-type-entrepreneurs-in-action .region-content .views-field-title,
+  .node-type-entrepreneurs-in-action .region-content .field-name-field-title {
+    clear: none; }
+  .page-entrepreneurs-in-action .region-content .news-more,
+  .node-type-entrepreneurs-in-action .region-content .news-more {
+    margin-left: 490px; }
+  .page-entrepreneurs-in-action .region-content .views-row,
+  .node-type-entrepreneurs-in-action .region-content .views-row {
+    padding: 50px 0; }
+  .page-entrepreneurs-in-action .region-content .views-row-even .views-field-field-image img,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .views-field-field-image img {
+    float: right; }
+  .page-entrepreneurs-in-action .region-content .views-row-even .views-field-title,
+  .page-entrepreneurs-in-action .region-content .views-row-even .field-name-field-title,
+  .page-entrepreneurs-in-action .region-content .views-row-even .views-field-field-entrepreneur-name,
+  .page-entrepreneurs-in-action .region-content .views-row-even .views-field-body,
+  .page-entrepreneurs-in-action .region-content .views-row-even .field-name-body,
+  .page-entrepreneurs-in-action .region-content .views-row-even .views-field-field-link,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .views-field-title,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .field-name-field-title,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .views-field-field-entrepreneur-name,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .views-field-body,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .field-name-body,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .views-field-field-link {
+    padding-right: 500px;
+    padding-left: 10px; }
+  .page-entrepreneurs-in-action .region-content .views-row-even .news-more,
+  .node-type-entrepreneurs-in-action .region-content .views-row-even .news-more {
+    margin-right: 480px;
+    margin-left: 0; }
+
+  .node-type-news .region-content .field-name-field-image ~ .field-name-body {
+    padding-left: 340px; }
+  .node-type-news .region-content .views-field-body,
+  .node-type-news .region-content .field-name-body {
+    padding-left: 170px; }
+
+  #block-views-logo-block-block {
+    text-align: center; }
+    #block-views-logo-block-block .content {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 10px;
+      margin: 0 auto;
+      width: auto;
+      max-width: initial;
+      overflow: none; }
+    #block-views-logo-block-block .view-content {
+      margin: 0 auto; }
+
+  #block-views-site-tweets-block .views-row {
+    width: 0;
+    height: 0;
+    border: 149px solid transparent;
+    border-bottom-color: #fff;
+    position: relative;
+    top: -149px;
+    display: block;
+    z-index: 5;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1; }
+    #block-views-site-tweets-block .views-row:after {
+      content: "";
+      position: absolute;
+      left: -149px;
+      top: 149px;
+      width: 0;
+      height: 0;
+      border: 149px solid transparent;
+      border-top-color: #fff; }
+    #block-views-site-tweets-block .views-row:before {
+      content: "";
+      background: url(../img/bg-diamond-shadow-2.png) top left no-repeat;
+      background-size: 100%;
+      position: absolute;
+      height: 304.0px;
+      width: 304.0px;
+      margin-left: -151.0px;
+      margin-top: 0; }
+    #block-views-site-tweets-block .views-row, #block-views-site-tweets-block .views-row.views-row-1, #block-views-site-tweets-block .views-row.views-row-2 {
+      margin: 0 6px; } }
+
+/*# sourceMappingURL=screen.css.map */

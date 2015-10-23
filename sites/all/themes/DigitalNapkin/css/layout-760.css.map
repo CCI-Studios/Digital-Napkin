@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cAAe;EACd,OAAO,EAAE,KAAK;;AAGf,YAAa;EACZ,KAAK,EAAE,KAAK;;AAGb,wBAAyB;EACxB,MAAM,EAAE,OAAO",
+"sources": ["../sass/layout-760.scss"],
+"names": [],
+"file": "layout-760.css"
+}

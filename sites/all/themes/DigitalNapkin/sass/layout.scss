@@ -1,0 +1,226 @@
+body, html {height: 100%;}
+
+.profile {
+	@include container;
+	margin-top: 1em;
+}
+
+#page-wrapper {
+	overflow: hidden;
+	position: relative;
+	background: #fff;
+}
+
+.container {
+	@include container;
+}
+
+#navigation {
+	//padding: 0 10px 10px;
+}
+
+#header {
+	@include container;
+	text-align: center;
+	padding-bottom: 45px;
+	padding-top:30px;
+}
+
+#page-title {
+	.page-archived-news &,
+	.page-news &,
+	.node-type-news &,
+	.page-entrepreneurs-in-action &.page-title-entrepreneurs,
+	.page-young-entrepreneurs &,
+	.page-services-for-entrepreneurs-resources & {
+		background: #f2f2f2 url(../img/bg-page-title.png) top right no-repeat;
+
+		> div {
+			background: url(../img/bg-page-title-shadow-top.png) top center repeat-x;
+			display: table;
+			width: 100%;
+
+			> div {
+				background: url(../img/bg-page-title-shadow-bottom.png) bottom center repeat-x;
+				height: 155px;
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	.page-entrepreneurs-in-action & {
+		display: none;
+	}
+
+	.page-entrepreneurs-in-action &.page-title-entrepreneurs {
+		display: block;
+		> div {
+			> div {
+				height: 225px;
+			}
+		}
+	}
+	.front & {
+		@include sr-only;
+	}
+}
+
+#content {
+	background: #f2f2f2 url(../img/bg-main-content.png) top right no-repeat;
+
+	.node-type-page &,
+	.node-type-entrepreneurs-in-action &,
+	.page-sitemap &,
+	.page-user & {
+		> div {
+			background: url(../img/bg-page-title-shadow-top.png) top center repeat-x;
+		}
+
+		> div > div {
+			background: url(../img/bg-page-title-shadow-bottom.png) bottom center repeat-x;
+		}
+	}
+
+	.node-type-news & {
+		background: #fff url(../img/bg-news-odd.png) bottom left no-repeat;
+	}
+
+	.region-content {
+		@include container;
+		padding: 1em 10px 3em;
+
+		.front & {
+			padding: 0;
+		}
+
+		.page-archived-news &,
+		.page-news &,
+		.page-entrepreneurs-in-action &,
+		.page-young-entrepreneurs &,
+		//young entrepreneurs
+		.page-node-23 &,
+		.page-services-for-entrepreneurs-resources & {
+			max-width: 100%;
+			padding: 0;
+		}
+	}
+
+	.page-node-23 & .block-system {
+		@include container;
+		padding-bottom: 40px;
+	}
+}
+
+.pager {
+
+	.item-list & {
+		margin: 0;
+		padding: 2em 0;
+		position: relative;
+		left: 50%;
+		display: block;
+		float: left;
+
+		li {
+			padding: 0;
+			margin: 0;
+			position: relative;
+			display: block;
+			float: left;
+			right: 50%;
+		}
+	}
+
+	li.pager-item,
+	li.pager-current {
+		@include diamond($green, 14px);
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		padding: 0;
+		color: #fff;
+		line-height: 2em;
+
+		span {
+			height: 28px;
+			width: 28px;
+			margin-left: -14px;
+			display: block;
+			position: relative;
+			z-index: 2;
+		}
+
+		a {
+			color: #fff;
+		}
+	}
+
+	.pager-previous,
+	.pager-next {
+		span {
+			width: 18px;
+			height: 29px;
+		}
+
+		a {
+			display: block;
+			text-indent: -9999px;
+			width: 18px;
+			height: 29px;
+		}
+	}
+
+	.pager-previous {
+		a {
+			background: url(../img/icon-pager-prev.jpg) center center no-repeat; 
+			margin-right: 20px;
+		}
+	}
+
+	.pager-next {
+		a {
+			background: url(../img/icon-pager-next.jpg) center center no-repeat; 
+			margin-left: 20px;
+		}
+	}
+	li.pager-ellipsis,
+	.pager-first.first,
+	.pager-last.last, {
+		display: none;
+	}
+}
+
+#footer {
+	background: #000;
+	color: #7f7f7f;
+	padding: 20px 10px;
+	text-align: center;
+	font-size: 12px;
+	min-height: 65px;
+
+	a {
+		color: #7f7f7f;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.region-footer {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+#copyright, #site-by-cci {
+	margin: 2em 0;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	padding: 0 10px;
+}
+
+#site-by-cci {
+	border-left: 1px solid #7f7f7f;
+}

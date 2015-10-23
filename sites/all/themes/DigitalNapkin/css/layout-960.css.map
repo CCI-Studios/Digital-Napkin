@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAc;EACb,SAAS,EAAE,KAAK;;AAGjB,UAAW;EACV,KAAK,EAAE,KAAK",
+"sources": ["../sass/layout-960.scss"],
+"names": [],
+"file": "layout-960.css"
+}
